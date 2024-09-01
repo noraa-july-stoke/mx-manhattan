@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Rubik Mono One", monospace; */
+}
+
+.rubik-mono-one-regular {
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+.rubik-mono-one {
+  font-family: "Rubik Mono One", monospace;
+  font-style: normal;
+}
+
+
+.App {
+  height: 100vh;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content horizontally */
+}
+
+canvas {
+  width: 100%;
+}
+
+*::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10rem;
+  border: 1px solid #fff;
+}
+
+*::-webkit-scrollbar-track-piece:start {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.canvas-container {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.canvas-container.hidden {
+  opacity: 0;
+}

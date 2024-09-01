@@ -1,0 +1,35 @@
+/* NavBar Styles */
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  border-bottom: 3px solid black;
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar-item {
+  padding: 0 2em;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1em;
+  padding-bottom: 5px;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.navbar-link:hover {
+  color: #555555;
+  border-bottom: 2px solid #000000;
+}
+
+/* ReleaseCard Styles */
