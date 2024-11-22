@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4d85ada1.css",
+    "main.js": "/static/js/main.76e9f053.js",
+    "static/js/453.9cac5d88.chunk.js": "/static/js/453.9cac5d88.chunk.js",
+    "static/media/mx-logo.png": "/static/media/mx-logo.7e85571d05f29da93b78.png",
+    "index.html": "/index.html",
+    "main.4d85ada1.css.map": "/static/css/main.4d85ada1.css.map",
+    "main.76e9f053.js.map": "/static/js/main.76e9f053.js.map",
+    "453.9cac5d88.chunk.js.map": "/static/js/453.9cac5d88.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4d85ada1.css",
+    "static/js/main.76e9f053.js"
+  ]
+}

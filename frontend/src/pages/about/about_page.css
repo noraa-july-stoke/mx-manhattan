@@ -1,0 +1,64 @@
+.about-page-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: black;
+  color: white;
+  font-family: 'Rubik Mono One', sans-serif;
+}
+
+.artist-bio, .artist-contact {
+  margin-bottom: 40px;
+}
+
+.artist-bio h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.artist-bio p, .artist-contact p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.artist-contact h2 {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+.artist-contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.artist-contact li {
+  margin-bottom: 10px;
+}
+
+.artist-contact a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.artist-contact a:hover {
+  color: #ccc;
+}
+
+.site-footer {
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.site-footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.site-footer a:hover {
+  color: #ccc;
+}

@@ -29,7 +29,6 @@ const HomePage = () => {
           </button>
         </form>
       </section>
-
       <section className="social-media-section">
         <h2 className="section-heading">Follow Us</h2>
         <div className="social-media-links">
