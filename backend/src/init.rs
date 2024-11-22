@@ -1,8 +1,9 @@
 // src/init.rs
 use argon2::{
-    password_hash::{PasswordHash, PasswordHasher, SaltString},
+    password_hash::{PasswordHasher, SaltString},
     Argon2,
-};use sqlx::PgPool;
+};
+use sqlx::PgPool;
 use std::env;
 
 pub async fn create_initial_admin_user(db_pool: &PgPool) -> Result<(), sqlx::Error> {

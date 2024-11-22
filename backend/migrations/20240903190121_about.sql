@@ -1,10 +1,10 @@
 -- Add migration script here
-CREATE TABLE shows (
+CREATE TABLE about (
     id SERIAL PRIMARY KEY UNIQUE,
-    show_date DATE NOT NULL,
-    venue VARCHAR(255) NOT NULL,
-    ticketing_link VARCHAR,
-    artwork VARCHAR,
+    bio TEXT NOT NULL,
+    contact_email VARCHAR(255) NOT NULL,
+    designer VARCHAR(255) NOT NULL,
+    portfolio_link VARCHAR(255) NOT NULL,
     created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP NOT NULL,
     updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP NOT NULL
-)
+);

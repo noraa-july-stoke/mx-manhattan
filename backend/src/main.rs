@@ -2,6 +2,7 @@ use crate::init::create_initial_admin_user;
 use dotenv::dotenv;
 use sqlx::postgres::PgPoolOptions;
 use tokio::net::TcpListener;
+use tower_http::cors::{Any, CorsLayer};
 
 mod app;
 mod db_types;
@@ -33,6 +34,8 @@ async fn main() {
         .expect("Could not create TCP listener");
 
     println!("Listening on {}", listener.local_addr().unwrap());
+
+    let cors = CorsLayer::permissive();
 
     let app = app::create_app(db_pool);
 
