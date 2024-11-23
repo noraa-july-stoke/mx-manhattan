@@ -5,6 +5,14 @@
   /* font-family: "Rubik Mono One", monospace; */
 }
 
+body, html {
+  overflow-x: hidden;
+}
+body{
+  background: black;
+}
+
+/* Fonts */
 .rubik-mono-one-regular {
   font-family: "Rubik Mono One", monospace;
   font-weight: 400;
@@ -16,6 +24,14 @@
   font-family: "Rubik Mono One", monospace;
   font-style: normal;
 }
+
+.suse {
+  font-family: "SUSE", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* App Styles */
 
 
 .App {
@@ -65,4 +81,9 @@ canvas {
 
 .canvas-container.hidden {
   opacity: 0;
+}
+
+/* Utility Styles */
+.text-center {
+  text-align: center;
 }

@@ -1,6 +1,27 @@
 .homepage-container {
-  color: black;
+  color: white;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  height: 100vh;
+}
+
+.logo-section {
+  padding-right: 50px;
+}
+
+.logo-section,
+.ghost-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.ghost-pic {
+  width: 50vh;
+  height: 50vh;
 }
 
 .cta-section {
@@ -103,10 +124,12 @@
   width: 40px;
   height: 40px;
   transition: transform 0.3s;
+  filter: brightness(0) invert(1); /* Makes black PNG white */
 }
 
 .social-icon:hover {
   transform: scale(1.1);
+  filter: brightness(0.8) invert(1); /* Slightly dimmed effect */
 }
 
 .news-feed {

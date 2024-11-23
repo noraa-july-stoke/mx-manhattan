@@ -1,0 +1,10 @@
+-- Add migration script here
+CREATE TABLE about (
+    id SERIAL PRIMARY KEY UNIQUE,
+    bio TEXT NOT NULL,
+    contact_email VARCHAR(255) NOT NULL,
+    designer VARCHAR(255) NOT NULL,
+    portfolio_link VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
