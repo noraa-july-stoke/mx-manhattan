@@ -5,6 +5,13 @@
   /* font-family: "Rubik Mono One", monospace; */
 }
 
+body, html {
+  overflow-x: hidden;
+}
+body{
+  background: black;
+}
+
 /* Fonts */
 .rubik-mono-one-regular {
   font-family: "Rubik Mono One", monospace;

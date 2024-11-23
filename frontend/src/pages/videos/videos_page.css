@@ -1,0 +1,94 @@
+.videos-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  background-color: #000; /* Matches your aesthetic */
+  color: white;
+  font-family: "Rubik Mono One", sans-serif;
+}
+
+.video-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.video-item {
+  position: relative;
+  cursor: pointer;
+  background-size: cover; /* Ensures the image covers the entire div */
+  background-position: center; /* Centers the image */
+  border-radius: 8px;
+  aspect-ratio: 1 / 1; /* Keeps the grid items square */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-height: 50vh;
+}
+
+.video-item:hover {
+  transform: scale(1.05);
+}
+
+.video-item:hover .video-overlay {
+  opacity: 1;
+}
+
+.video-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 0 0 8px 8px;
+  font-size: 1em;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.video-placeholder {
+  color: #fff;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.video-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2em;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  color: #ffcc00;
+}
+
+.modal-iframe {
+  width: 80vw;
+  height: 80vh;
+  border: none;
+  border-radius: 8px;
+}

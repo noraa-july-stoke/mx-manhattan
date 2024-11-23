@@ -1,5 +1,5 @@
 import "./App.css";
-import { SplashPage, HomePage, LoginPage, AdminPage, AboutPage } from "./pages";
+import { SplashPage, HomePage, LoginPage, AdminPage, AboutPage, VideosPage } from "./pages";
 import { NavBar } from "./pages/components";
 import SpotifyReleases from "./pages/releases/releases";
 import { useState } from "react";
@@ -51,12 +51,13 @@ function Content({ hasEntered, isFadingOut, handleFadeOut, setToken, token }) {
       <NavBar token={token} /> {/* Pass the token to Navbar */}
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/releases" element={<SpotifyReleases />} />
-        <Route
+        <Route path ="/videos" element ={<VideosPage/>}/>
+        {/* <Route path="/releases" element={<SpotifyReleases />} /> */}
+        {/* <Route
           path="/admin/login"
           element={<LoginPage setToken={setToken} />}
-        />
-        <Route path="/admin/dashboard" element={<AdminPage />} />
+        /> */}
+        {/* <Route path="/admin/dashboard" element={<AdminPage />} /> */}
         <Route path="/about" element={<AboutPage />}/>
       </Routes>
     </>

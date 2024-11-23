@@ -11,18 +11,18 @@ const Navbar = ({ token }) => {
             Home
           </Link>
         </li>
-        <li className="navbar-item">
+        {/* <li className="navbar-item">
           <Link to="/releases" className="navbar-link">
             Releases
           </Link>
-        </li>
-        <li className="navbar-item">
+        </li> */}
+        {/* <li className="navbar-item">
           <Link to="/live" className="navbar-link">
             Live
           </Link>
-        </li>
+        </li> */}
         <li className="navbar-item">
-          <Link to="/" className="navbar-link">
+          <Link to="/videos" className="navbar-link">
             Videos
           </Link>
         </li>
@@ -46,13 +46,13 @@ const Navbar = ({ token }) => {
             About
           </Link>
         </li>
-        {token && ( // Conditionally render the "Dashboard" link if the admin is logged in
+        {/* {token && ( // Conditionally render the "Dashboard" link if the admin is logged in
           <li className="navbar-item">
             <Link to="/admin/dashboard" className="navbar-link">
               Dashboard
             </Link>
           </li>
-        )}
+        )} */}
       </ul>
     </nav>
   );
